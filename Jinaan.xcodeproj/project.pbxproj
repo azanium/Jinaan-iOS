@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3DECC09351A2A9297FC8DD7 /* Pods_Jinaan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF8144A5E561E8DC078F4159 /* Pods_Jinaan.framework */; };
+		778F7A9B29EE5AE4E76E3B85 /* libPods-Jinaan.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C2AC4004CCB16D875FC63325 /* libPods-Jinaan.a */; };
 		C100B7471C4A88BF005F9682 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100B7461C4A88BF005F9682 /* AppDelegate.swift */; };
 		C100B7491C4A88BF005F9682 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100B7481C4A88BF005F9682 /* ViewController.swift */; };
 		C100B74C1C4A88BF005F9682 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C100B74A1C4A88BF005F9682 /* Main.storyboard */; };
@@ -16,6 +16,23 @@
 		C100B7541C4A88C0005F9682 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C100B7521C4A88C0005F9682 /* LaunchScreen.storyboard */; };
 		C100B75F1C4A88C0005F9682 /* JinaanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100B75E1C4A88C0005F9682 /* JinaanTests.swift */; };
 		C100B76A1C4A88C0005F9682 /* JinaanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C100B7691C4A88C0005F9682 /* JinaanUITests.swift */; };
+		C100B77F1C4BA8D7005F9682 /* VDLPlaybackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C100B77D1C4BA8D7005F9682 /* VDLPlaybackViewController.m */; };
+		C100B7801C4BA8D7005F9682 /* VDLPlaybackViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C100B77E1C4BA8D7005F9682 /* VDLPlaybackViewController.xib */; };
+		C100B7841C4BBC97005F9682 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C100B7831C4BBC97005F9682 /* libiconv.tbd */; };
+		C100B7861C4BBCA6005F9682 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C100B7851C4BBCA6005F9682 /* libz.tbd */; };
+		C100B7881C4BBCC1005F9682 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C100B7871C4BBCC1005F9682 /* libsqlite3.tbd */; };
+		C100B78A1C4BBCCE005F9682 /* libbz2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C100B7891C4BBCCE005F9682 /* libbz2.tbd */; };
+		C11662EC1C5CFE4C00D53C35 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C100B7811C4BBC83005F9682 /* libstdc++.6.0.9.tbd */; };
+		C11663361C5D010100D53C35 /* PTTorrentStreamer.mm in Sources */ = {isa = PBXBuildFile; fileRef = C11663351C5D010100D53C35 /* PTTorrentStreamer.mm */; };
+		C11663381C5D014300D53C35 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11663371C5D014300D53C35 /* Security.framework */; };
+		C116633A1C5D014E00D53C35 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C11663391C5D014E00D53C35 /* SystemConfiguration.framework */; };
+		C1C380451C527C5600A918E1 /* TPRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C380431C527C5600A918E1 /* TPRequest.swift */; };
+		C1C380461C527C5600A918E1 /* TPResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C380441C527C5600A918E1 /* TPResponse.swift */; };
+		C1C3804C1C527C6E00A918E1 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C380481C527C6E00A918E1 /* Extensions.swift */; };
+		C1C3804D1C527C6E00A918E1 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C3804A1C527C6E00A918E1 /* UIImage+ImageEffects.m */; };
+		C1C380681C527CBA00A918E1 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C380611C527CBA00A918E1 /* ColorUtils.swift */; };
+		C1C380691C527CBA00A918E1 /* CryptoUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C380621C527CBA00A918E1 /* CryptoUtil.swift */; };
+		C1C3806A1C527CBA00A918E1 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C380631C527CBA00A918E1 /* DateUtils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +54,6 @@
 
 /* Begin PBXFileReference section */
 		835677C86C9C56FFEC2AF496 /* Pods-Jinaan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jinaan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jinaan/Pods-Jinaan.release.xcconfig"; sourceTree = "<group>"; };
-		BF8144A5E561E8DC078F4159 /* Pods_Jinaan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jinaan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB80B51BB4F8D8EF8010B3F /* Pods-Jinaan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jinaan.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jinaan/Pods-Jinaan.debug.xcconfig"; sourceTree = "<group>"; };
 		C100B7431C4A88BF005F9682 /* Jinaan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jinaan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C100B7461C4A88BF005F9682 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +69,28 @@
 		C100B7651C4A88C0005F9682 /* JinaanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JinaanUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C100B7691C4A88C0005F9682 /* JinaanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JinaanUITests.swift; sourceTree = "<group>"; };
 		C100B76B1C4A88C0005F9682 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C100B77C1C4BA8D7005F9682 /* VDLPlaybackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VDLPlaybackViewController.h; sourceTree = "<group>"; };
+		C100B77D1C4BA8D7005F9682 /* VDLPlaybackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VDLPlaybackViewController.m; sourceTree = "<group>"; };
+		C100B77E1C4BA8D7005F9682 /* VDLPlaybackViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VDLPlaybackViewController.xib; sourceTree = "<group>"; };
+		C100B7811C4BBC83005F9682 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		C100B7831C4BBC97005F9682 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		C100B7851C4BBCA6005F9682 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		C100B7871C4BBCC1005F9682 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C100B7891C4BBCCE005F9682 /* libbz2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.tbd; path = usr/lib/libbz2.tbd; sourceTree = SDKROOT; };
+		C11662E91C5CE2BD00D53C35 /* PTTorrentStreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PTTorrentStreamer.h; sourceTree = "<group>"; };
+		C11662F21C5CFFFD00D53C35 /* Jinaan-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Jinaan-Bridging-Header.h"; sourceTree = "<group>"; };
+		C11663351C5D010100D53C35 /* PTTorrentStreamer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PTTorrentStreamer.mm; sourceTree = "<group>"; };
+		C11663371C5D014300D53C35 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C11663391C5D014E00D53C35 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C1C380431C527C5600A918E1 /* TPRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPRequest.swift; sourceTree = "<group>"; };
+		C1C380441C527C5600A918E1 /* TPResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TPResponse.swift; sourceTree = "<group>"; };
+		C1C380481C527C6E00A918E1 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		C1C380491C527C6E00A918E1 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		C1C3804A1C527C6E00A918E1 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		C1C380611C527CBA00A918E1 /* ColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
+		C1C380621C527CBA00A918E1 /* CryptoUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoUtil.swift; sourceTree = "<group>"; };
+		C1C380631C527CBA00A918E1 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		C2AC4004CCB16D875FC63325 /* libPods-Jinaan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jinaan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +98,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3DECC09351A2A9297FC8DD7 /* Pods_Jinaan.framework in Frameworks */,
+				C116633A1C5D014E00D53C35 /* SystemConfiguration.framework in Frameworks */,
+				C11663381C5D014300D53C35 /* Security.framework in Frameworks */,
+				C11662EC1C5CFE4C00D53C35 /* libstdc++.6.0.9.tbd in Frameworks */,
+				C100B78A1C4BBCCE005F9682 /* libbz2.tbd in Frameworks */,
+				C100B7881C4BBCC1005F9682 /* libsqlite3.tbd in Frameworks */,
+				C100B7861C4BBCA6005F9682 /* libz.tbd in Frameworks */,
+				C100B7841C4BBC97005F9682 /* libiconv.tbd in Frameworks */,
+				778F7A9B29EE5AE4E76E3B85 /* libPods-Jinaan.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +129,14 @@
 		375C38AF1F02A0CF2234540B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF8144A5E561E8DC078F4159 /* Pods_Jinaan.framework */,
+				C11663391C5D014E00D53C35 /* SystemConfiguration.framework */,
+				C11663371C5D014300D53C35 /* Security.framework */,
+				C100B7891C4BBCCE005F9682 /* libbz2.tbd */,
+				C100B7871C4BBCC1005F9682 /* libsqlite3.tbd */,
+				C100B7851C4BBCA6005F9682 /* libz.tbd */,
+				C100B7831C4BBC97005F9682 /* libiconv.tbd */,
+				C100B7811C4BBC83005F9682 /* libstdc++.6.0.9.tbd */,
+				C2AC4004CCB16D875FC63325 /* libPods-Jinaan.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -123,6 +175,8 @@
 		C100B7451C4A88BF005F9682 /* Jinaan */ = {
 			isa = PBXGroup;
 			children = (
+				C100B7791C4BA8D7005F9682 /* Thirdparties */,
+				C1C380411C527C5600A918E1 /* Common */,
 				C100B7461C4A88BF005F9682 /* AppDelegate.swift */,
 				C100B7481C4A88BF005F9682 /* ViewController.swift */,
 				C100B74A1C4A88BF005F9682 /* Main.storyboard */,
@@ -130,6 +184,7 @@
 				C100B7521C4A88C0005F9682 /* LaunchScreen.storyboard */,
 				C100B7551C4A88C0005F9682 /* Info.plist */,
 				C100B74D1C4A88C0005F9682 /* Jinaan.xcdatamodeld */,
+				C11662F21C5CFFFD00D53C35 /* Jinaan-Bridging-Header.h */,
 			);
 			path = Jinaan;
 			sourceTree = "<group>";
@@ -150,6 +205,81 @@
 				C100B76B1C4A88C0005F9682 /* Info.plist */,
 			);
 			path = JinaanUITests;
+			sourceTree = "<group>";
+		};
+		C100B7791C4BA8D7005F9682 /* Thirdparties */ = {
+			isa = PBXGroup;
+			children = (
+				C100B77A1C4BA8D7005F9682 /* VLCKit */,
+			);
+			path = Thirdparties;
+			sourceTree = "<group>";
+		};
+		C100B77A1C4BA8D7005F9682 /* VLCKit */ = {
+			isa = PBXGroup;
+			children = (
+				C100B77B1C4BA8D7005F9682 /* Dropin-Player */,
+			);
+			path = VLCKit;
+			sourceTree = "<group>";
+		};
+		C100B77B1C4BA8D7005F9682 /* Dropin-Player */ = {
+			isa = PBXGroup;
+			children = (
+				C100B77C1C4BA8D7005F9682 /* VDLPlaybackViewController.h */,
+				C100B77D1C4BA8D7005F9682 /* VDLPlaybackViewController.m */,
+				C100B77E1C4BA8D7005F9682 /* VDLPlaybackViewController.xib */,
+			);
+			path = "Dropin-Player";
+			sourceTree = "<group>";
+		};
+		C11662E81C5CE2BD00D53C35 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C11662E91C5CE2BD00D53C35 /* PTTorrentStreamer.h */,
+				C11663351C5D010100D53C35 /* PTTorrentStreamer.mm */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C1C380411C527C5600A918E1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C11662E81C5CE2BD00D53C35 /* Network */,
+				C1C380471C527C6E00A918E1 /* Categories */,
+				C1C380421C527C5600A918E1 /* Data Store */,
+				C1C3805E1C527CBA00A918E1 /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C1C380421C527C5600A918E1 /* Data Store */ = {
+			isa = PBXGroup;
+			children = (
+				C1C380431C527C5600A918E1 /* TPRequest.swift */,
+				C1C380441C527C5600A918E1 /* TPResponse.swift */,
+			);
+			path = "Data Store";
+			sourceTree = "<group>";
+		};
+		C1C380471C527C6E00A918E1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				C1C380481C527C6E00A918E1 /* Extensions.swift */,
+				C1C380491C527C6E00A918E1 /* UIImage+ImageEffects.h */,
+				C1C3804A1C527C6E00A918E1 /* UIImage+ImageEffects.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		C1C3805E1C527CBA00A918E1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C1C380611C527CBA00A918E1 /* ColorUtils.swift */,
+				C1C380621C527CBA00A918E1 /* CryptoUtil.swift */,
+				C1C380631C527CBA00A918E1 /* DateUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +391,7 @@
 			files = (
 				C100B7541C4A88C0005F9682 /* LaunchScreen.storyboard in Resources */,
 				C100B7511C4A88C0005F9682 /* Assets.xcassets in Resources */,
+				C100B7801C4BA8D7005F9682 /* VDLPlaybackViewController.xib in Resources */,
 				C100B74C1C4A88BF005F9682 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,9 +465,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C3804D1C527C6E00A918E1 /* UIImage+ImageEffects.m in Sources */,
+				C1C380681C527CBA00A918E1 /* ColorUtils.swift in Sources */,
+				C1C380691C527CBA00A918E1 /* CryptoUtil.swift in Sources */,
+				C1C380461C527C5600A918E1 /* TPResponse.swift in Sources */,
+				C1C3806A1C527CBA00A918E1 /* DateUtils.swift in Sources */,
 				C100B74F1C4A88C0005F9682 /* Jinaan.xcdatamodeld in Sources */,
+				C11663361C5D010100D53C35 /* PTTorrentStreamer.mm in Sources */,
 				C100B7491C4A88BF005F9682 /* ViewController.swift in Sources */,
+				C100B77F1C4BA8D7005F9682 /* VDLPlaybackViewController.m in Sources */,
+				C1C380451C527C5600A918E1 /* TPRequest.swift in Sources */,
 				C100B7471C4A88BF005F9682 /* AppDelegate.swift in Sources */,
+				C1C3804C1C527C6E00A918E1 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,10 +619,18 @@
 			baseConfigurationReference = BFB80B51BB4F8D8EF8010B3F /* Pods-Jinaan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = Jinaan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.azacode.Jinaan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Jinaan/Jinaan-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -491,10 +639,18 @@
 			baseConfigurationReference = 835677C86C9C56FFEC2AF496 /* Pods-Jinaan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				GCC_PREPROCESSOR_DEFINITIONS = "$(inherited)";
+				GCC_WARN_INHIBIT_ALL_WARNINGS = NO;
+				GCC_WARN_PEDANTIC = NO;
 				INFOPLIST_FILE = Jinaan/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.azacode.Jinaan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Jinaan/Jinaan-Bridging-Header.h";
 			};
 			name = Release;
 		};
