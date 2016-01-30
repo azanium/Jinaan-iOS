@@ -243,16 +243,20 @@ using namespace libtorrent;
 
 - (void)prioritizeNextPieces:(torrent_handle)th
 {
-    int next_required_piece = required_pieces[MIN_PIECES-1]+1;
-    required_pieces.clear();
-    
-    boost::intrusive_ptr<const torrent_info> ti = th.torrent_file();
-    
-    for (int i=next_required_piece; i<next_required_piece+MIN_PIECES; i++) {
-        if (i < ti->num_pieces()) {
-            th.piece_priority(i, LIBTORRENT_PRIORITY_MAXIMUM);
-            th.set_piece_deadline(i, PIECE_DEADLINE_MILLIS, torrent_handle::alert_when_available);
-            required_pieces.push_back(i);
+    // {Suhendra Ahmad}
+    // Tested on torrent file, the required_pieces sometimes has 0 size, I don't what happened if we use if. I got bufferProgress nan :(
+    if (required_pieces.size() > 0) {
+        int next_required_piece = required_pieces[MIN_PIECES-1]+1;
+        required_pieces.clear();
+        
+        boost::intrusive_ptr<const torrent_info> ti = th.torrent_file();
+        
+        for (int i=next_required_piece; i<next_required_piece+MIN_PIECES; i++) {
+            if (i < ti->num_pieces()) {
+                th.piece_priority(i, LIBTORRENT_PRIORITY_MAXIMUM);
+                th.set_piece_deadline(i, PIECE_DEADLINE_MILLIS, torrent_handle::alert_when_available);
+                required_pieces.push_back(i);
+            }
         }
     }
 }

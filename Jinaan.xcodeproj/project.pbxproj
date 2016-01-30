@@ -33,6 +33,8 @@
 		C1C380681C527CBA00A918E1 /* ColorUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C380611C527CBA00A918E1 /* ColorUtils.swift */; };
 		C1C380691C527CBA00A918E1 /* CryptoUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C380621C527CBA00A918E1 /* CryptoUtil.swift */; };
 		C1C3806A1C527CBA00A918E1 /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1C380631C527CBA00A918E1 /* DateUtils.swift */; };
+		C1C540521C5D1F8200A509D3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1C540511C5D1F8200A509D3 /* CFNetwork.framework */; };
+		C1C540541C5D227500A509D3 /* deadgirl-2008.torrent in Resources */ = {isa = PBXBuildFile; fileRef = C1C540531C5D227500A509D3 /* deadgirl-2008.torrent */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		C1C380611C527CBA00A918E1 /* ColorUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUtils.swift; sourceTree = "<group>"; };
 		C1C380621C527CBA00A918E1 /* CryptoUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptoUtil.swift; sourceTree = "<group>"; };
 		C1C380631C527CBA00A918E1 /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
+		C1C540511C5D1F8200A509D3 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		C1C540531C5D227500A509D3 /* deadgirl-2008.torrent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "deadgirl-2008.torrent"; sourceTree = "<group>"; };
 		C2AC4004CCB16D875FC63325 /* libPods-Jinaan.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jinaan.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -98,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1C540521C5D1F8200A509D3 /* CFNetwork.framework in Frameworks */,
 				C116633A1C5D014E00D53C35 /* SystemConfiguration.framework in Frameworks */,
 				C11663381C5D014300D53C35 /* Security.framework in Frameworks */,
 				C11662EC1C5CFE4C00D53C35 /* libstdc++.6.0.9.tbd in Frameworks */,
@@ -129,6 +134,7 @@
 		375C38AF1F02A0CF2234540B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C1C540511C5D1F8200A509D3 /* CFNetwork.framework */,
 				C11663391C5D014E00D53C35 /* SystemConfiguration.framework */,
 				C11663371C5D014300D53C35 /* Security.framework */,
 				C100B7891C4BBCCE005F9682 /* libbz2.tbd */,
@@ -177,14 +183,10 @@
 			children = (
 				C100B7791C4BA8D7005F9682 /* Thirdparties */,
 				C1C380411C527C5600A918E1 /* Common */,
+				C10AD4581C5D1DB8006A96A5 /* Resources */,
+				C10AD4571C5D1DA6006A96A5 /* Supporting Files */,
 				C100B7461C4A88BF005F9682 /* AppDelegate.swift */,
 				C100B7481C4A88BF005F9682 /* ViewController.swift */,
-				C100B74A1C4A88BF005F9682 /* Main.storyboard */,
-				C100B7501C4A88C0005F9682 /* Assets.xcassets */,
-				C100B7521C4A88C0005F9682 /* LaunchScreen.storyboard */,
-				C100B7551C4A88C0005F9682 /* Info.plist */,
-				C100B74D1C4A88C0005F9682 /* Jinaan.xcdatamodeld */,
-				C11662F21C5CFFFD00D53C35 /* Jinaan-Bridging-Header.h */,
 			);
 			path = Jinaan;
 			sourceTree = "<group>";
@@ -231,6 +233,27 @@
 				C100B77E1C4BA8D7005F9682 /* VDLPlaybackViewController.xib */,
 			);
 			path = "Dropin-Player";
+			sourceTree = "<group>";
+		};
+		C10AD4571C5D1DA6006A96A5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C100B7551C4A88C0005F9682 /* Info.plist */,
+				C11662F21C5CFFFD00D53C35 /* Jinaan-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C10AD4581C5D1DB8006A96A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C1C540531C5D227500A509D3 /* deadgirl-2008.torrent */,
+				C100B74A1C4A88BF005F9682 /* Main.storyboard */,
+				C100B7501C4A88C0005F9682 /* Assets.xcassets */,
+				C100B7521C4A88C0005F9682 /* LaunchScreen.storyboard */,
+				C100B74D1C4A88C0005F9682 /* Jinaan.xcdatamodeld */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		C11662E81C5CE2BD00D53C35 /* Network */ = {
@@ -393,6 +416,7 @@
 				C100B7511C4A88C0005F9682 /* Assets.xcassets in Resources */,
 				C100B7801C4BA8D7005F9682 /* VDLPlaybackViewController.xib in Resources */,
 				C100B74C1C4A88BF005F9682 /* Main.storyboard in Resources */,
+				C1C540541C5D227500A509D3 /* deadgirl-2008.torrent in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
